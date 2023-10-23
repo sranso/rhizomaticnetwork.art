@@ -1,7 +1,16 @@
+import cx from 'classnames'
+import { Reenie_Beanie } from 'next/font/google'
+
+const reenieBeanie = Reenie_Beanie({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 export default function Navbar() {
   return (
-    <nav className="fixed top-0">
-      rhizomatic network
-    </nav>
+    <div className="fixed left-2 top-1">
+      <p className={cx('text-2xl', reenieBeanie.className)}>rhizomatic network</p>
+    </div>
   )
 }
