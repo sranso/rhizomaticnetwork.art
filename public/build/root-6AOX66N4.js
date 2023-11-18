@@ -1,13 +1,14 @@
 import {
-  require_jsx_dev_runtime
-} from "/build/_shared/chunk-XU7DNSPJ.js";
-import {
   Links,
   LiveReload,
   Meta,
   Outlet,
-  Scripts
-} from "/build/_shared/chunk-CO6A2AT7.js";
+  Scripts,
+  ScrollRestoration
+} from "/build/_shared/chunk-NOZBVMEC.js";
+import {
+  require_jsx_dev_runtime
+} from "/build/_shared/chunk-XU7DNSPJ.js";
 import {
   createHotContext
 } from "/build/_shared/chunk-WCSRDGK4.js";
@@ -18,7 +19,10 @@ import {
   __toESM
 } from "/build/_shared/chunk-PNG5AS42.js";
 
-// app/root.jsx
+// app/tailwind.css
+var tailwind_default = "/build/_assets/tailwind-DMCKZVVP.css";
+
+// app/root.tsx
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
 if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
   console.warn("remix:hmr: React Fast Refresh only works when the Remix compiler is running in development mode.");
@@ -26,7 +30,7 @@ if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
   prevRefreshReg = window.$RefreshReg$;
   prevRefreshSig = window.$RefreshSig$;
   window.$RefreshReg$ = (type, id) => {
-    window.$RefreshRuntime$.register(type, '"app/root.jsx"' + id);
+    window.$RefreshRuntime$.register(type, '"app/root.tsx"' + id);
   };
   window.$RefreshSig$ = window.$RefreshRuntime$.createSignatureFunctionForTransform;
 }
@@ -35,62 +39,70 @@ var prevRefreshSig;
 if (import.meta) {
   import.meta.hot = createHotContext(
     //@ts-expect-error
-    "app/root.jsx"
+    "app/root.tsx"
   );
-  import.meta.hot.lastModified = "1700326737302.4653";
 }
+var links = () => [{
+  rel: "stylesheet",
+  href: tailwind_default
+}];
 function App() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("html", { children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("html", { lang: "en", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("head", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("link", { rel: "icon", href: "data:image/x-icon;base64,AA" }, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 25,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Meta, {}, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 26,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Links, {}, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 27,
-        columnNumber: 9
-      }, this)
-    ] }, void 0, true, {
-      fileName: "app/root.jsx",
-      lineNumber: 24,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("body", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { children: "Hello under world!" }, void 0, false, {
-        fileName: "app/root.jsx",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("meta", { charSet: "utf-8" }, void 0, false, {
+        fileName: "app/root.tsx",
         lineNumber: 30,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Outlet, {}, void 0, false, {
-        fileName: "app/root.jsx",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("meta", { name: "viewport", content: "width=device-width, initial-scale=1" }, void 0, false, {
+        fileName: "app/root.tsx",
         lineNumber: 31,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Scripts, {}, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 33,
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Meta, {}, void 0, false, {
+        fileName: "app/root.tsx",
+        lineNumber: 32,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(LiveReload, {}, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 34,
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Links, {}, void 0, false, {
+        fileName: "app/root.tsx",
+        lineNumber: 33,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
-      fileName: "app/root.jsx",
+      fileName: "app/root.tsx",
       lineNumber: 29,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("body", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Outlet, {}, void 0, false, {
+        fileName: "app/root.tsx",
+        lineNumber: 36,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ScrollRestoration, {}, void 0, false, {
+        fileName: "app/root.tsx",
+        lineNumber: 37,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Scripts, {}, void 0, false, {
+        fileName: "app/root.tsx",
+        lineNumber: 38,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(LiveReload, {}, void 0, false, {
+        fileName: "app/root.tsx",
+        lineNumber: 39,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "app/root.tsx",
+      lineNumber: 35,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
-    fileName: "app/root.jsx",
-    lineNumber: 23,
+    fileName: "app/root.tsx",
+    lineNumber: 28,
     columnNumber: 10
   }, this);
 }
@@ -100,6 +112,7 @@ $RefreshReg$(_c, "App");
 window.$RefreshReg$ = prevRefreshReg;
 window.$RefreshSig$ = prevRefreshSig;
 export {
-  App as default
+  App as default,
+  links
 };
-//# sourceMappingURL=/build/root-YK475BO7.js.map
+//# sourceMappingURL=/build/root-6AOX66N4.js.map
