@@ -1,6 +1,8 @@
 export default function Start() {
   return (
     <main>
+      {/* what is the message here. how can i make this more silly.
+also look at notion notes, at alan watts */}
       <img src='/savannah.gif' className='w-full' />
       <div className='font-mono bg-sky-200 h-screen'>
         <div className='text-center'>
