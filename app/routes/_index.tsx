@@ -26,6 +26,9 @@ export default function Index() {
           <Link to='/transient-ecstasy'>transient-ecstasy</Link>
         </p>
         <p>
+          <Link to='/growing-in-time'>growing-in-time</Link>
+        </p>
+        <p>
           <Link to='/colors'>colors</Link>
         </p>
       </div>
