@@ -22,7 +22,7 @@ export default function TransientEcstasy() {
           touch: '!bg-transparent !text-blue-500 text-center',
         }}
       >
-        <h1 className='text-4xl mb-4'>{`${time.toLocaleTimeString()}`}</h1>
+        <h1 className='text-4xl mb-4'>{time.toLocaleTimeString()}</h1>
       </Tooltip>
       <p>
         Tomorrow, and tomorrow, and tomorrow,
