@@ -27,3 +27,7 @@ Then run the app in production mode:
 ```sh
 npm start
 ```
+
+- what is the message here. how can i make this more silly.
+- look at notion notes, at alan watts
+- add time, am/pm to local storage
