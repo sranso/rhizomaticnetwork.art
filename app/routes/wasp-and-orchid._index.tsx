@@ -1,5 +1,3 @@
-import { Link } from '@remix-run/react';
-
 export default function WaspAndOrchid() {
   const iframeOverrides = `
     .ytp-chrome-top, .ytp-show-cards-title, .ytp-impression-link {
