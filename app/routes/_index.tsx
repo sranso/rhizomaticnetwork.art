@@ -20,6 +20,9 @@ export default function Index() {
           <Link to='/start'>start</Link>
         </p>
         <p>
+          <Link to='/yayayayayaya'>yayayayayaya</Link>
+        </p>
+        <p>
           <Link to='/peripheral'>peripheral</Link>
         </p>
         <p>
