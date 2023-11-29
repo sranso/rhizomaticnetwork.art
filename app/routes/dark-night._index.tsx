@@ -17,7 +17,7 @@ export default function DarkNight() {
   const COLORS = ['bg-cyan-900', 'bg-emerald-50', 'bg-rose-300'];
   const LIGHTS_COUNT = 335;
   return (
-    <div className='w-screen h-screen bg-sky-950 flex justify-center items-center flex-col'>
+    <div className='w-screen h-screen bg-slate-950 flex justify-center items-center flex-col'>
       <div className='flex flex-wrap flex-row h-48 w-48 rounded-full opacity-50 items-center justify-center'>
         {Array.from(Array(LIGHTS_COUNT)).map((_x, i) => {
           const dimensionsIndex = randomIntInRange(0, DIMENSIONS.length - 1);

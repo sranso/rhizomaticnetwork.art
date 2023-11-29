@@ -1,3 +1,9 @@
+add description to site
+add links to site
+rebecca? mycorrhuziql 
+home page links to random one?
+list of oages youve visited?
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)

@@ -17,6 +17,9 @@ export default function Index() {
       <div>
         <h1 className='font-extrabold'>links</h1>
         <p>
+          <Link to='/sources'>sources</Link>
+        </p>
+        <p>
           <Link to='/start'>start</Link>
         </p>
         <p>
