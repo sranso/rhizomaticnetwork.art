@@ -24,6 +24,7 @@ export default function DarkNight() {
           const colorsIndex = randomIntInRange(0, COLORS.length - 1);
           return (
             <div
+              key={i}
               className={cx(
                 'animate-pulse rounded-full',
                 DIMENSIONS[dimensionsIndex],
