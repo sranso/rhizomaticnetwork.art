@@ -1,6 +1,9 @@
-reach out to rebecca? mycorrhizal
-home page links to random one?
-list of pages youve visited?
+# todos
+
+- reach out to rebecca? mycorrhizal
+- nav bar
+  - have home page link to random one?
+  - have a list of pages you've visited so you can track your path.
 
 # Welcome to Remix!
 
