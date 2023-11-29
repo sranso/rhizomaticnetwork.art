@@ -1,8 +1,6 @@
-add description to site
-add links to site
-rebecca? mycorrhuziql 
+reach out to rebecca? mycorrhizal
 home page links to random one?
-list of oages youve visited?
+list of pages youve visited?
 
 # Welcome to Remix!
 
