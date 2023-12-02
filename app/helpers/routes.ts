@@ -9,9 +9,11 @@ const ROUTES = [
   'madeline',
   'peripheral',
   'sources',
+  'start',
   'territories',
   'transient-ecstasy',
   'wasp-and-orchid',
+  'web',
   'yayayayayaya',
 ];
 export default ROUTES;
