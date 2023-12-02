@@ -1,7 +1,7 @@
 import type { MetaFunction } from '@remix-run/node';
 import { Link } from '@remix-run/react';
 
-import ROUTES from '~/routes';
+import ROUTES from '~/helpers/routes';
 
 export const meta: MetaFunction = () => {
   return [

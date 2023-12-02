@@ -2,7 +2,7 @@ import { Link } from '@remix-run/react';
 import cx from 'classnames';
 
 import { useTimeContext, amPm } from '~/components/TimeContext';
-import ROUTES from '~/routes';
+import ROUTES from '~/helpers/routes';
 
 // TODO: error bc server and client links don't match
 export default function NavBar() {
