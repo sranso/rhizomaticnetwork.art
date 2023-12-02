@@ -7,16 +7,16 @@ export default function Yayayayayaya() {
         className='object-cover'
       />
       <div>
-        <p className='animate-bounce text-center'>
+        <div className='animate-bounce text-center'>
           <blockquote cite='https://files.libcom.org/files/A%20Thousand%20Plateaus.pdf'>
             Since each of us was several, there was already quite a crowd.
           </blockquote>
-        </p>
-        <p className='animate-spin text-center -mt-6'>
+        </div>
+        <div className='animate-spin text-center -mt-6'>
           <blockquote cite='https://files.libcom.org/files/A%20Thousand%20Plateaus.pdf'>
             Since each of us was several, there was already quite a crowd.
           </blockquote>
-        </p>
+        </div>
       </div>
     </div>
   );
