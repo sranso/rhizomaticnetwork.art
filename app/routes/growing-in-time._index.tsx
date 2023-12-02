@@ -1,5 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import cx from 'classnames';
+
+import { useTimeContext, amPm } from '~/components/TimeContext';
 
 // https://github.com/sranso/clock-circles/blob/master/clock.js
 const OPACITY = [0.25, 0.5, 1];
@@ -24,19 +26,17 @@ const SECONDS_RADIUS_MIN = 0 + CENTER_PADDING;
 const hoursRadius = (hours: number) => hours + HOURS_RADIUS_MIN;
 const minutesRadius = (minutes: number) => minutes + MINUTES_RADIUS_MIN;
 const secondsRadius = (seconds: number) => seconds + SECONDS_RADIUS_MIN;
-const amPm = (hours: number) => (hours > 11 && hours < 24 ? 'pm' : 'am');
 
 export default function GrowingInTime() {
-  const [time, setTime] = useState(new Date());
+  const { time } = useTimeContext();
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const canvasCtxRef = useRef<CanvasRenderingContext2D | null>(null);
 
   const draw = (ctx: CanvasRenderingContext2D | null) => {
     if (!ctx) return;
-    const hours = time.getHours();
-    const amOrPm = amPm(hours);
+    const amOrPm = amPm(time);
     [
-      hoursRadius(hours),
+      hoursRadius(time.getHours()),
       minutesRadius(time.getMinutes()),
       secondsRadius(time.getSeconds()),
     ].forEach((radius, i) => {
@@ -54,7 +54,6 @@ export default function GrowingInTime() {
   };
 
   useEffect(() => {
-    const timeInterval = setInterval(() => setTime(new Date()), 1000);
     const drawInterval = setInterval(draw, 1000);
 
     if (canvasRef.current) {
@@ -91,7 +90,6 @@ export default function GrowingInTime() {
     }
 
     return () => {
-      clearInterval(timeInterval);
       clearInterval(drawInterval);
     };
   }, [time]);
@@ -99,8 +97,8 @@ export default function GrowingInTime() {
   return (
     <div
       className={cx('flex justify-center flex-col text-center', {
-        'bg-amber-900 text-emerald-50': amPm(time.getHours()) === 'pm',
-        'bg-orange-100 text-emerald-950': amPm(time.getHours()) === 'am',
+        'bg-amber-900 text-emerald-50': amPm(time) === 'pm',
+        'bg-orange-100 text-emerald-950': amPm(time) === 'am',
       })}
     >
       <q className='pt-6'>

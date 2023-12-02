@@ -1,4 +1,5 @@
 import type { LinksFunction } from '@remix-run/node';
+import { useState, useEffect } from 'react';
 import {
   Links,
   LiveReload,
@@ -8,6 +9,8 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 import stylesheet from '~/tailwind.css';
+
+import TimeContext from './components/TimeContext';
 import NavBar from './components/NavBar';
 
 export const links: LinksFunction = () => [
@@ -15,6 +18,13 @@ export const links: LinksFunction = () => [
 ];
 
 export default function App() {
+  const [time, setTime] = useState(new Date());
+  useEffect(() => {
+    const timeInterval = setInterval(() => setTime(new Date()), 1000);
+    return () => {
+      clearInterval(timeInterval);
+    };
+  }, [time]);
   return (
     <html lang='en'>
       <head>
@@ -23,9 +33,11 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <NavBar />
       <body>
-        <Outlet />
+        <TimeContext.Provider value={{ time }}>
+          <NavBar />
+          <Outlet />
+        </TimeContext.Provider>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
