@@ -1,5 +1,6 @@
 export default function Start() {
   const showOne = Math.round(Math.random()) === 1;
+  // add click target in a window that takes to diff page
   return (
     <main className='flex'>
       {showOne ? (
