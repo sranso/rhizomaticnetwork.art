@@ -11,7 +11,7 @@ export default function BathroomWithAView() {
         <br />
         when geese fly in a V, what are they hearing?
         <br />
-        when a frog breaths the water, what is its sight?
+        when a frog breathes the water, what is its sight?
         <br />i want to know what love smells like.
       </p>
     </main>
