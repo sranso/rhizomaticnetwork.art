@@ -9,12 +9,10 @@ const STYLES = {
   fill: {
     am: (i: number) => `rgba(253, 164, 175, ${OPACITY[i]})`,
     pm: (i: number) => `rgba(22, 78, 99, ${OPACITY[i]})`,
-    alarm: 'rgba(213, 0, 143, 0.65)',
   },
   stroke: {
     am: 'rgba(136, 19, 55, 0.90)',
     pm: 'rgba(8, 51, 68, 0.90)',
-    alarm: 'rgba(255, 128, 204, 0.90)',
   },
 };
 const SPACE_FOR_TIME_AND_ALARM = 250;
@@ -96,19 +94,18 @@ export default function GrowingInTime() {
 
   return (
     <div
-      className={cx('flex justify-center flex-col text-center', {
+      className={cx('flex h-screen justify-center flex-col text-center', {
         'bg-amber-900 text-emerald-50': amPm(time) === 'pm',
         'bg-orange-100 text-emerald-950': amPm(time) === 'am',
       })}
     >
-      <q className='pt-6'>
-        a rhizome has no beginning or end; it is always in the middle,
-        <br />
-        between things, interbeing, intermezzo.
+      <q className='my-8 mx-4 md:max-w-md md:mx-auto'>
+        a rhizome has no beginning or end; it is always in the middle, between
+        things, interbeing, intermezzo.
       </q>
-      <canvas id='canvas' width='600' height='600' ref={canvasRef}></canvas>
-      {/* <div id='current-time'>{time.toLocaleTimeString()}</div> */}
-      {/* <input id='alarm' type='time'></input> */}
+      <div className='mx-auto md:max-w-lg'>
+        <canvas id='canvas' width='600' height='600' ref={canvasRef}></canvas>
+      </div>
     </div>
   );
 }
