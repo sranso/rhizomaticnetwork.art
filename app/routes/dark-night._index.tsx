@@ -16,6 +16,7 @@ export default function DarkNight() {
   const LIGHTS_COUNT = 335;
   return (
     <div className='w-screen h-screen bg-slate-950 flex justify-center items-center flex-col'>
+      <div className='w-[800px] h-[1000px] bg-slate-300 rounded-full opacity-10 top-9 absolute' />
       <div className='flex flex-wrap flex-row h-48 w-48 rounded-full opacity-50 items-center justify-center'>
         {Array.from(Array(LIGHTS_COUNT)).map((_x, i) => {
           const dimensionsIndex = randomIntInRange(0, DIMENSIONS.length - 1);
@@ -32,7 +33,7 @@ export default function DarkNight() {
           );
         })}
       </div>
-      <p className='fixed bottom-4 text-emerald-50 italic opacity-80'>
+      <p className='fixed bottom-4 text-emerald-50 italic opacity-70 mx-6'>
         "Pain is knowledge rushing in to fill a void." - Jerry Seinfeld
       </p>
     </div>
