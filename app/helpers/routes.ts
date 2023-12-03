@@ -6,6 +6,7 @@ const ROUTES = [
   'growing-in-time',
   'idk-yet',
   'inside-light',
+  'lie-down-with-me',
   'madeline',
   'peripheral',
   'sources',

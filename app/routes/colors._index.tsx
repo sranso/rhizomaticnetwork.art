@@ -1,8 +1,6 @@
 export default function Start() {
   return (
     <main>
-      {/* what is the message here. how can i make this more silly.
-also look at notion notes, at alan watts */}
       <h2>day</h2>
       <div className='flex'>
         <div className='bg-emerald-950 w-20 h-20'></div>

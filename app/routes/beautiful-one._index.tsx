@@ -4,7 +4,7 @@ export default function BeautifulOne() {
     <main className='flex'>
       <img src='/xena.gif' className='w-full absolute' />
       {showFirst ? (
-        <p className='w-2/5 mt-4 mx-auto relative text-sky-950'>
+        <p className='w-10/12 md:w-2/5 mt-4 mx-auto relative text-sky-950'>
           “And while I am completely engulfed in my sadness, I am happy to sense
           that you exist, beautiful one. I am happy to have flung myself without
           fear into your beauty just as a bird flings itself into space. I am
