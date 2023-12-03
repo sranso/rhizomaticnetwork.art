@@ -12,7 +12,7 @@ const ROUTES = [
   'peripheral',
   'sources',
   'start',
-  'territories',
+  // 'territories',
   'transient-ecstasy',
   'wasp-and-orchid',
   'web',
