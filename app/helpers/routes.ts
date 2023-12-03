@@ -9,7 +9,7 @@ const ROUTES = [
   'lie-down-with-me',
   'madeline',
   'not-knowing-is-most-intimate',
-  'peripheral',
+  'peripheral-vision',
   'sources',
   'start',
   // 'territories',
