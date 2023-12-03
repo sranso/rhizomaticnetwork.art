@@ -1,5 +1,6 @@
 const ROUTES = [
   '',
+  'bathroom-with-a-view',
   'beautiful-one',
   'colors',
   'dark-night',
