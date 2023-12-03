@@ -18,7 +18,7 @@ export default function TransientEcstasy() {
         title='To the mind which lets go and moves with the flow of change, the sense of transience or emptiness becomes a kind of ecstasy'
         classes={{
           tooltip: '!bg-transparent !text-blue-500 text-center',
-          popper: 'bg-emerald-50',
+          popper: 'bg-emerald-50 px-4 pt-4 max-w-sm rounded',
           touch: '!bg-transparent !text-blue-500 text-center',
         }}
       >
@@ -44,8 +44,7 @@ export default function TransientEcstasy() {
         Told by an idiot, full of sound and fury,
         <br />
         Signifying nothing.
-        <br />
-        R. H. Blyth
+        <br />– William Shakespeare
       </p>
     </div>
   );
