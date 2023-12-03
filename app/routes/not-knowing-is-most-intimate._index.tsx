@@ -19,7 +19,7 @@ export default function IDKYet() {
         <img src='/drawing-class-5.JPG' />
       </Link>
       <Link to='/not-knowing-is-most-intimate'>
-        <img src='/drawing-class-12.jpg' />
+        <img src='/drawing-class-12.JPG' />
       </Link>
       <Link to='/yayayayayaya'>
         <img src='/drawing-class-7.JPG' />
@@ -28,16 +28,16 @@ export default function IDKYet() {
         <img src='/drawing-class-8.JPG' />
       </Link>
       <Link to='/wasp-and-orchid'>
-        <img src='/drawing-class-10.jpg' />
+        <img src='/drawing-class-10.JPG' />
       </Link>
       <Link to='/sources'>
         <img src='/drawing-class-13.JPG' />
       </Link>
       <Link to='/madeline'>
-        <img src='/drawing-class-4.JPG' />
+        <img src='/drawing-class-4.jpg' />
       </Link>
       <Link to='/start'>
-        <img src='/drawing-class-9.JPG' />
+        <img src='/drawing-class-9.jpg' />
       </Link>
     </main>
   );
