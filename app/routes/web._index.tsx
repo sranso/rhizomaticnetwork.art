@@ -10,7 +10,8 @@ export default function Web() {
     setWeb(getWeb());
   }, []);
   return (
-    <div className=''>
+    <div>
+      <h2 className='font-bold'>where you've been is not who you are</h2>
       {web &&
         web.map((w, i) => {
           return (
