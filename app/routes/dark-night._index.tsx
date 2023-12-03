@@ -1,8 +1,6 @@
 import cx from 'classnames';
 
-function randomIntInRange(min: number, max: number): number {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+import { randomIntInRange } from '~/helpers/math';
 
 export default function DarkNight() {
   const DIMENSIONS = [
