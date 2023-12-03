@@ -2,7 +2,7 @@ const ROUTES = [
   '',
   'bathroom-with-a-view',
   'beautiful-one',
-  'colors',
+  // 'colors',
   'dark-night',
   'growing-in-time',
   'inside-light',
