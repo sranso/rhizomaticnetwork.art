@@ -1,3 +1,4 @@
+import { Link } from '@remix-run/react';
 import { useState, useEffect } from 'react';
 
 import { getWeb } from '~/helpers/web';
@@ -12,7 +13,11 @@ export default function Web() {
     <div className=''>
       {web &&
         web.map((w, i) => {
-          return <p key={`${w}-${i}`}>{w}</p>;
+          return (
+            <Link to={w}>
+              <p key={`${w}-${i}`}>{w}</p>
+            </Link>
+          );
         })}
     </div>
   );

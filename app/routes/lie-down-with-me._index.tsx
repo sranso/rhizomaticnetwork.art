@@ -1,3 +1,5 @@
+import { Link } from '@remix-run/react';
+
 export default function Start() {
   return (
     <main className='w-10/12 md:w-6/12 mx-auto space-y-8 mt-4'>
@@ -8,7 +10,9 @@ export default function Start() {
         <br />
         (Koan)
       </p>
-      <img src='/drawing-class-5.JPG' className='' />
+      <Link to='/not-knowing-is-most-intimate'>
+        <img src='/drawing-class-5.JPG' className='' />
+      </Link>
     </main>
   );
 }
