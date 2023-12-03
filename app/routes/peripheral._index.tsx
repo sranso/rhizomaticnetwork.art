@@ -1,4 +1,6 @@
 import cx from 'classnames';
+import { Link } from '@remix-run/react';
+
 export default function Start() {
   const LARGER_TRIANGLES = [
     { border: '15rem', borderBottom: '20rem', rotation: 'rotate-2' },
@@ -16,33 +18,36 @@ export default function Start() {
   ];
   return (
     <main className='relative'>
-      <div className='flex w-screen h-screen bg-orange-100'>
+      <Link to='/wasp-and-orchid'>
+        <img src='/wasp.jpg' className='w-screen opacity-5 absolute' />
+      </Link>
+      <div className='flex w-screen h-screen'>
+        <img src='/wasp.jpg' className='h-48 w-48' />
         <div className='pl-4 z-10'>
           {[1, 2, 3, 4, 5].map((num, i) => {
             return (
-              <div className='bg-orange-100'>
-                <div
-                  className={cx(
-                    'bg-emerald-50 w-0 h-0 relative origin-center',
-                    LARGER_TRIANGLES[i].rotation
-                  )}
-                  style={{
-                    border: `${LARGER_TRIANGLES[i].border} solid transparent`,
-                    borderTop: '0',
-                    borderBottom: `${LARGER_TRIANGLES[i].borderBottom} solid rgb(8, 51, 68)`,
-                  }}
-                ></div>
-              </div>
+              <div
+                className={cx(
+                  'bg-emerald-50 w-0 h-0 relative origin-center opacity-20',
+                  LARGER_TRIANGLES[i].rotation
+                )}
+                style={{
+                  border: `${LARGER_TRIANGLES[i].border} solid transparent`,
+                  borderTop: '0',
+                  borderBottom: `${LARGER_TRIANGLES[i].borderBottom} solid rgb(8, 51, 68)`,
+                }}
+              ></div>
             );
           })}
         </div>
         <div className='z-10 scale-75'>
           {[1, 2, 3, 4, 5].map((num, i) => {
             return (
-              <div className='bg-orange-100'>
+              <>
+                <img src='/wasp.jpg' className='h-48 w-48' />
                 <div
                   className={cx(
-                    'bg-emerald-50 w-0 h-0 relative origin-center',
+                    'bg-emerald-50 w-0 h-0 relative origin-center opacity-50',
                     SMALLER_TRIANGLES[i].rotation
                   )}
                   style={{
@@ -51,18 +56,21 @@ export default function Start() {
                     borderBottom: `${SMALLER_TRIANGLES[i].borderBottom} solid rgb(8, 51, 68)`,
                   }}
                 ></div>
-              </div>
+              </>
             );
           })}
         </div>
         <div className='fixed right-0 w-6/12 rotate-180 bottom-0'>
           {[1, 2, 3, 4, 5].map((num, i) => {
             return (
-              <div className='bg-orange-100'>
+              <>
                 <div
                   className={cx(
                     'bg-emerald-50 w-0 h-0 relative origin-center',
-                    SMALLER_TRIANGLES[i].rotation
+                    SMALLER_TRIANGLES[i].rotation,
+                    {
+                      'opacity-25': i === 2 || i === 5,
+                    }
                   )}
                   style={{
                     border: `${SMALLER_TRIANGLES[i].border} solid transparent`,
@@ -70,7 +78,8 @@ export default function Start() {
                     borderBottom: `${SMALLER_TRIANGLES[i].borderBottom} solid rgb(8, 51, 68)`,
                   }}
                 ></div>
-              </div>
+                <img src='/wasp.jpg' className='h-48 w-48' />
+              </>
             );
           })}
         </div>
@@ -90,7 +99,20 @@ export default function Start() {
               ></div>
             );
           })}
+          <img src='/wasp.jpg' className='h-48 w-48 opacity-60' />
         </div>
+        <Link to='/wasp-and-orchid'>
+          <img
+            src='/wasp.jpg'
+            className='h-20 w-20 bottom-0 left-0 fixed opacity-10'
+          />
+        </Link>
+        <Link to='/wasp-and-orchid'>
+          <img
+            src='/wasp.jpg'
+            className='h-20 w-20 bottom-12 left-12 fixed opacity-20'
+          />
+        </Link>
       </div>
     </main>
   );
