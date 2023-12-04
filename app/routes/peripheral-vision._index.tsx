@@ -22,7 +22,16 @@ export default function Start() {
         <img src='/wasp.jpg' className='w-screen opacity-5 absolute' />
       </Link>
       <div className='flex w-screen h-screen'>
-        <img src='/wasp.jpg' className='h-48 w-48' />
+        <div>
+          <img src='/wasp.jpg' className='h-48 w-48' />
+          <p className='w-52 m-2'>
+            Thus the reliability of our decisions rests ultimately upon our
+            ability to "feel" the situation, upon the degree to which this
+            "peripheral vision" has been developed. Every exponent of the{' '}
+            <i>I Ching</i> knows this.
+            <br />– <i>The Way of Zen</i> by Alan Watts
+          </p>
+        </div>
         <div className='pl-4 z-10'>
           {[1, 2, 3, 4, 5].map((num, i) => {
             return (
