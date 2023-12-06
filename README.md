@@ -1,6 +1,8 @@
 # todos
 
 - reach out to rebecca? mycorrhizal
+- add sound, my voice?
+- more personal, homemade
 - finding mother tree?
 - style links, headers
 - nav bar

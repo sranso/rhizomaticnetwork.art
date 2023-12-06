@@ -16,6 +16,7 @@ const ROUTES = [
   'transient-ecstasy',
   'wasp-and-orchid',
   'web',
+  'where-is-my-home',
   'yayayayayaya',
 ];
 export default ROUTES;
