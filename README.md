@@ -8,6 +8,7 @@
 - nav bar
   - have a list of pages you've visited so you can track your path
 - things don't need to make sense! but if they don't, they should have more delight. where there is less sense, there is more delight, so the value remains consistent.
+- test
 
 remix links
 
