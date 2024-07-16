@@ -3,7 +3,7 @@
 - reach out to rebecca? mycorrhizal
 - add sound, my voice?
 - more personal, homemade
-- finding mother tree?
+- finding mother tree -- quotes or highlights
 - style links, headers
 - nav bar
   - have a list of pages you've visited so you can track your path

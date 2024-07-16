@@ -11,6 +11,7 @@ const ROUTES = [
   'not-knowing-is-most-intimate',
   'peripheral-vision',
   'sources',
+  'spaghetti',
   'start',
   // 'territories',
   'transient-ecstasy',
